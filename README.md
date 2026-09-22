@@ -62,6 +62,20 @@ clusters, interpretação dos grupos e visualização das fronteiras.
 
 ---
 
+### [Análise Exploratória — Base de Filmes](analise-filmes-movielens/)
+
+Exploração de avaliações e características de filmes, cruzando o MovieLens
+(100.836 notas de 610 usuários) com o TMDB (orçamento, receita e idioma).
+
+Cobre distribuição das notas com comparação entre média e mediana, separação dos
+gêneros concatenados por `|`, e análise de orçamento versus receita — com o
+recorte dos filmes que registraram faturamento, já que boa parte da base tem
+valor zero e distorce a distribuição.
+
+**Técnicas:** pandas · seaborn · histograma e boxplot · `query` para recorte
+
+---
+
 ### [Análise Exploratória — Gêneros Musicais](analise-generos-musicais/)
 
 Exploração de preferências de streaming musical pelo mundo, comparando uma EDA
@@ -93,6 +107,7 @@ próprio projeto e podem ser executados de cima a baixo sem configuração extra
 
 ```
 Projetos-Data-Science/
+├── analise-filmes-movielens/
 ├── analise-generos-musicais/
 ├── classificacao-titanic/
 │   └── data/
