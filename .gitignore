@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+*.joblib
+*.pkl
+previsoes*.xlsx
+*_profile_report.html
+Global_Music_Streaming_Listener_Preferences.csv
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
