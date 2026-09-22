@@ -42,6 +42,10 @@ etapa que costuma ficar de fora: **serializar o modelo e consumi-lo depois**.
 **Técnicas:** Linear Regression · serialização com joblib · inferência em lote
 **Dados:** `data/casas_treino.csv`, `data/casas_teste.csv`
 
+O script de inferência depende do modelo serializado. Gere-o executando antes o
+notebook `1_treino_e_deploy.ipynb`, que salva o `regressao.joblib` na pasta do
+projeto. Depois:
+
 ```bash
 cd regressao-precos-casas
 python ModeloML.py --modelo regressao.joblib --entrada data/casas_teste.csv --saida previsoes.xlsx
